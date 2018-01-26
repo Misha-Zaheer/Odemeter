@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <div class="row" style="text-align:center">
+        <div class="col-md-6 ">
+            <span class="btn btn-primary btn-lg" id="mybutton">
+                @Html.ActionLink("Add Transporter", "Create", "Transporters")
+            </span>
+
+        </div>
+        <div class="col-md-6 ">
+            <span class="btn btn-info btn-lg" id="mybutton">
+                @Html.ActionLink("Add Reading", "Create", "MeterReadings")
+            </span>
+        </div>
+
+    </div>
+</div>
+<div class="jumbotron">
+    <div class="row" style="text-align:center">
+        <div class="col-md-6 ">
+            <span class="btn btn-lg btn-primary" id="mybutton">
+                @Html.ActionLink("See All Transporters", "index", "Transporters")
+            </span>
+
+        </div>
+        <div class="col-md-6 ">
+            <span class="btn btn-lg btn-info" id="mybutton">
+                @Html.ActionLink("See All Readings", "index", "MeterReadings")
+            </span>
+        </div>
+    </div>
+</div>
+
